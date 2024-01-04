@@ -1,0 +1,119 @@
+#hero {
+  overflow: hidden;
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 1fr auto;
+}
+
+.hero__image {
+  grid-row: span 2;
+  position: relative;
+}
+.hero__image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background-color: var(--primary-color);
+}
+.hero__image > img {
+  width: 120%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 5;
+}
+.hero__image > h1 {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 3rem;
+
+  font-size: 7.5rem;
+  line-height: 9rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero__content {
+  padding-inline: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.hero__content-info > h1 {
+  font-family: var(--playfair-font);
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.hero__content-info > p {
+  font-family: var(--plus-jakarta-sans-font);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.hero__content-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.order-now,
+.how-to-order {
+  min-width: 15rem;
+  padding: 1rem 2rem;
+  border: 0;
+  outline: 0;
+  border-radius: 2rem;
+
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-family: var(--plus-jakarta-sans-font);
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.how-to-order {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid;
+}
+.how-to-order > svg {
+  margin-right: 1rem;
+}
+
+.hero__testimony {
+  background-color: #fff;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__testimony-happy > h2 {
+  font-family: var(--playfair-font);
+  font-size: 2rem;
+}
+.hero__testimony-happy > p {
+  font-family: var(--plus-jakarta-sans-font);
+  opacity: 0.8;
+}
+.hero__testimony-review {
+  display: flex;
+  align-items: center;
+
+  border-left: 1px solid #02020255;
+  padding-left: 2rem;
+}
+.hero__testimony-review > img {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem;
+}
+.hero__testimony-review > p {
+  font-family: var(--plus-jakarta-sans-font);
+  opacity: 0.8;
+
+  max-width: 20rem;
+}

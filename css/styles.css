@@ -1,0 +1,83 @@
+/* google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+/* custom CSS files */
+@import url("./sections/header.css");
+@import url("./sections/hero.css");
+@import url("./sections/about.css");
+@import url("./sections/menu.css");
+@import url("./sections/foods.css");
+@import url("./sections/cta.css");
+@import url("./sections/footer.css");
+
+:root {
+  --default-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --playfair-font: "Playfair Display", serif;
+  --plus-jakarta-sans-font: "Plus Jakarta Sans", sans-serif;
+
+  --primary-color: #b1454a;
+  --secondary-color: #121212;
+
+  --black-200: #020202;
+  --black-300: #333333;
+  --black-400: #1f1e31;
+  --black-500: #555555;
+  --gray-100: #888888;
+
+  --creamson-color: #fff0de;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--creamson-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--playfair-font);
+}
+
+p,
+a {
+  font-family: var(--plus-jakarta-sans-font);
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-wrapper {
+  max-width: max(1280px, 75%);
+  margin: auto;
+}
+
+.sushi-subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: var(--plus-jakarta-sans-font);
+  color: var(--secondary-color);
+  opacity: 0.8;
+}
+.sushi-title {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: var(--playfair-font);
+  color: var(--secondary-color);
+}
+.sushi-desc {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: var(--plus-jakarta-sans-font);
+  color: var(--secondary-color);
+}

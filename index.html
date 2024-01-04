@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="shortcut icon" href="./public/sushi-9.png" type="image/png" />
+    <title>Sushi Restaurant</title>
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <header>
+        <nav class="header__nav">
+          <div class="header__brand">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Maki Magic</h2>
+          </div>
+          <ul
+            class="header__menu"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#foods">food</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#about">about</a></li>
+            <li class="header__menu-search">
+              <img src="./assets/search.svg" alt="search icon" />
+            </li>
+          </ul>
+          <div
+            class="header__menu-mobile"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <img src="./assets/menu.svg" alt="menu toggle" />
+          </div>
+        </nav>
+      </header>
+
+      <section id="hero">
+        <div class="hero__image">
+          <img
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            src="./assets/sushi-1.png"
+            alt="sushi image"
+          />
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            日 <br />
+            本 <br />
+            食
+          </h1>
+        </div>
+        <div class="hero__content">
+          <div
+            class="hero__content-info"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h1>Feel the taste of Japanese food</h1>
+            <p>
+              The most authentic and most popular Japanese food at your doorstep
+            </p>
+          </div>
+          <div
+            class="hero__content-button"
+            data-aos="zoom-in-up"
+            data-aos-duration="500"
+            data-aos-delay="500"
+          >
+            <button class="order-now">Order Now!</button>
+            <button class="how-to-order">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-play-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                />
+              </svg>
+              How to order?
+            </button>
+          </div>
+        </div>
+        <div
+          class="hero__testimony"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="hero__testimony-happy">
+            <h2>24k+</h2>
+            <p>Happy Customers</p>
+          </div>
+          <div class="hero__testimony-review">
+            <img
+              src="./assets/user.png"
+              alt="user profile"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            />
+            <p>This is the best and most authentic Japanese food delivery.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about__image">
+          <div class="about__image-sushi1">
+            <img
+              src="./assets/sushi-3.png"
+              alt="sushi-1"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
+          </div>
+          <button class="about__button">
+            Learn More
+            <img src="./assets/arrow-up-right.svg" alt="arrow-up-right" />
+          </button>
+          <div class="about__image-sushi2">
+            <img
+              src="./assets/sushi-2.png"
+              alt="sushi-2"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
+          </div>
+        </div>
+        <div
+          class="about__content"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <p class="sushi-subtitle">About Us / 私たちに関しては</p>
+          <h2 class="sushi-title">
+            Our mission is to bring true Japanese flavours to you.
+          </h2>
+          <p class="sushi-desc">
+            We will continue to provide the experience of Omotenashi, the
+            Japanese mindset of hospitality, with our shopping and dining for
+            our customers.
+          </p>
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="menu-title" data-aos="flip-up" data-aos-duration="1500">
+          Popular Food / 人気
+        </h2>
+        <div class="foods__filters" data-aos="fade-in" data-aos-duration="1000">
+          <button class="foods__filters-btn active-btn">ALL</button>
+          <button class="foods__filters-btn">
+            <img src="./assets/sushi-9.png" alt="sushi" />
+            Sushi
+          </button>
+          <button class="foods__filters-btn">
+            <img src="./assets/sushi-8.png" alt="ramen" />
+            Ramen
+          </button>
+          <button class="foods__filters-btn">
+            <img src="./assets/sushi-7.png" alt="udon" />
+            Udon
+          </button>
+          <button class="foods__filters-btn">
+            <img src="./assets/sushi-6.png" alt="dango" />
+            Dango
+          </button>
+          <button class="foods__filters-btn">Others</button>
+        </div>
+
+        <div class="menu__catalouge">
+          <article
+            class="catalouge__card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img
+              class="catalouge__card-image"
+              src="./assets/sushi-12.png"
+              alt="sushi image"
+            />
+            <h3>Chezu Sushi</h3>
+            <div class="catalouge__card-detail">
+              <div class="catalouge__card-rating">
+                <img src="./assets/star.svg" alt="rating star" />
+                <p>4.9</p>
+              </div>
+              <p class="catalouge__card-price">$20.99</p>
+            </div>
+          </article>
+          <article
+            class="catalouge__card active-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            style="transform: scale(1.25)"
+          >
+            <img
+              class="catalouge__card-image"
+              src="./assets/sushi-11.png"
+              alt="sushi image"
+            />
+            <h3>Orignal Sushi</h3>
+            <div class="catalouge__card-detail">
+              <div class="catalouge__card-rating">
+                <img src="./assets/star.svg" alt="rating star" />
+                <p>5</p>
+              </div>
+              <p class="catalouge__card-price">$18.99</p>
+            </div>
+          </article>
+          <article
+            class="catalouge__card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img
+              class="catalouge__card-image"
+              src="./assets/sushi-10.png"
+              alt="sushi image"
+            />
+            <h3>Ramen Legendo</h3>
+            <div class="catalouge__card-detail">
+              <div class="catalouge__card-rating">
+                <img src="./assets/star.svg" alt="rating star" />
+                <p>4.7</p>
+              </div>
+              <p class="catalouge__card-price">$12.99</p>
+            </div>
+          </article>
+        </div>
+
+        <button class="menu-button">
+          Explore foods
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+        </button>
+      </section>
+
+      <section id="foods">
+        <div class="trending-sushi">
+          <div
+            class="trending__content"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <p class="shushi-subtitle">What's Trending / トレンド</p>
+            <h3 class="sushi-title">Japanese Sushi</h3>
+            <p class="sushi-desc">
+              Feel the taste of the most delicious Sushi here.
+            </p>
+            <ul class="trending__content-list">
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Make Sushi</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Oshizushi</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Uramaki Sushi</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Nigiri Sushi</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Temaki Sushi</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Inari Sushi</p>
+              </li>
+            </ul>
+          </div>
+          <div class="trending__image">
+            <img
+              src="./assets/sushi-5.png"
+              alt="sushi"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+          </div>
+        </div>
+
+        <div
+          class="trending-btn"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-delay="800"
+        >
+          <button>Discover</button>
+        </div>
+
+        <div class="trending-drinks">
+          <div class="trending__image">
+            <img
+              src="./assets/sushi-4.png"
+              alt="japanese drink"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
+          </div>
+          <div
+            class="trending__content"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <p class="shushi-subtitle">What's Trending / トレンド</p>
+            <h3 class="sushi-title">Japanese Drinks</h3>
+            <p class="sushi-desc">
+              Feel the taste of the most delicious Japense drinks here.
+            </p>
+            <ul class="trending__content-list">
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Oruncha</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Sakura Tea</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Aojiru</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Kombu-cha</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Mugicha</p>
+              </li>
+              <li>
+                <img src="./assets/check.svg" alt="check mark" />
+                <p>Ofukucha</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="cta">
+        <h2 class="cta-title" data-aos="flip-up" data-aos-duration="1000">
+          Get offers straight <br />
+          to your inbox
+        </h2>
+        <p class="cta-subtitle">Sign up for Maki Magic newsletter</p>
+        <div class="cta-subscribe" data-aos="zoom-in" data-aos-duration="1000">
+          <input type="text" placeholder="Enter Email Address" />
+          <button>Get Started</button>
+        </div>
+      </section>
+
+      <footer>
+        <h2 class="footer__logo" data-aos="fade-right" data-aos-duration="1000">
+          Maki Magic
+        </h2>
+        <ul class="footer__nav" data-aos="fade-up" data-aos-duration="1000">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="foods">Food</a></li>
+          <li><a href="services">services</a></li>
+          <li><a href="about">About Us</a></li>
+        </ul>
+        <ul
+          class="footer__social"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <li>
+            <a href="#">
+              <img src="./assets/facebook.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/instagram.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/twitter.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

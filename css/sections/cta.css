@@ -1,0 +1,64 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  padding: 3.5rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--primary-color);
+  background-image: url("../../assets/subscribe_bg.png");
+  color: #fff;
+
+  overflow: clip;
+}
+
+.cta-title {
+  font-size: 5.5rem;
+  text-align: center;
+}
+.cta-subtitle {
+  font-size: 1.125rem;
+}
+.cta-subscribe {
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5rem;
+
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.cta-subscribe > input {
+  flex: 1;
+
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1.125rem;
+  color: #fff;
+}
+.cta-subscribe > input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-family: var(--plus-jakarta-sans-font);
+}
+.cta-email:focus {
+  border: 0;
+}
+.cta-subscribe > button {
+  padding: 1rem 2.5rem;
+  border: 0;
+  border-radius: 5rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+
+  font-family: var(--plus-jakarta-sans-font);
+  font-size: 1.125rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}

@@ -1,0 +1,132 @@
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem;
+
+  overflow: hidden;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--primary-color);
+  background-image: url("../../assets/popular_bg.png");
+}
+
+.menu-title {
+  font-family: var(--playfair-font);
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.foods__filters {
+  display: flex;
+  gap: 1.25rem;
+  padding-inline: 2rem;
+
+  overflow: auto;
+}
+.foods__filters-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5rem;
+
+  font-family: var(--plus-jakarta-sans-font);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+
+  cursor: pointer;
+}
+.foods__filters-btn > img {
+  height: 2rem;
+  object-fit: contain;
+}
+.active-btn {
+  background-color: var(--creamson-color);
+  color: black;
+}
+.foods__filters-btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.menu__catalouge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3.5rem;
+  padding-block: 2rem;
+}
+.catalouge__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4rem;
+}
+.catalouge__card-image {
+  width: 220px;
+  height: 146px;
+  object-fit: contain;
+}
+.catalouge__card > h3 {
+  font-family: var(--plus-jakarta-sans-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.catalouge__card-detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalouge__card-detail p {
+  font-family: var(--plus-jakarta-sans-font);
+  font-size: 1.125rem;
+}
+.catalouge__card-price {
+  font-weight: 600;
+}
+.catalouge__card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.active-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-color: #fff;
+  margin-inline: 2rem;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 3rem;
+
+  border: 0;
+  border-radius: 5rem;
+
+  font-family: var(--plus-jakarta-sans-font);
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  background-color: var(--secondary-color);
+  color: #fff;
+
+  cursor: pointer;
+}
